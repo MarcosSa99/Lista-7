@@ -5,14 +5,12 @@ public abstract class Jedi extends SerVivo {
 	private boolean Telepatia;
 	private boolean Telecinese;
 	private boolean Persuasão;
-	private double CampoDeVidencia;
-	public Jedi(boolean Genêro, String Espécie, String DataNascimento, boolean Alive, String Nome, String PlanetaNatal, int MidChlorians, double PazInterna, boolean Telepatia, boolean Telecinese, boolean Persuasão, double CampoDeVidencia) {
+	public Jedi(boolean Genêro, String Espécie, String DataNascimento, boolean Alive, String Nome, String PlanetaNatal, int MidChlorians, double PazInterna, boolean Telepatia, boolean Telecinese, boolean Persuasão) {
 		super(Genêro, Espécie, DataNascimento, Alive, Nome, PlanetaNatal, MidChlorians);
 		this.PazInterna = PazInterna;
 		this.Telepatia = Telepatia;
 		this.Telecinese = Telecinese;
 		this.Persuasão = Persuasão;
-		this.CampoDeVidencia = CampoDeVidencia;
 	}
 	public double getPazInterna() {
 		return PazInterna;
@@ -37,12 +35,6 @@ public abstract class Jedi extends SerVivo {
 	}
 	public void setPersuasão(boolean persuasão) {
 		Persuasão = persuasão;
-	}
-	public double getCampoDeVisão() {
-		return CampoDeVisão;
-	}
-	public void setCampoDeVisão(double campoDeVisão) {
-		CampoDeVisão = campoDeVisão;
 	}
 
 }

@@ -5,9 +5,9 @@ public class Youngling extends Jedi{
 	private boolean ColetaDeCristais;
 	public Youngling(boolean Genêro, String Espécie, String DataNascimento, boolean Alive, String Nome,
 			String PlanetaNatal, int MidChlorians, double PazInterna, boolean Telepatia, boolean Telecinese,
-			boolean Persuasão, double CampoDeVidencia) {
+			boolean Persuasão) {
 		super(Genêro, Espécie, DataNascimento, Alive, Nome, PlanetaNatal, MidChlorians, PazInterna, Telepatia, Telecinese,
-				Persuasão, CampoDeVidencia);
+				Persuasão);
 	}
 	public String getClã() {
 		return clã;
