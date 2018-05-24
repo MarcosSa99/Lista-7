@@ -1,0 +1,81 @@
+package ex1;
+
+public abstract class SerVivo {
+	
+	private boolean Genêro;
+	private String Espécie;
+	private String DataNascimento;
+	private boolean Alive;
+	private String Nome;
+	private String PlanetaNatal;
+	private int MidiChlorians;
+	
+	public SerVivo (String Nome, boolean Genero, String Especie, String DataNascimento, String PlanetaNatal, int MidiChlorians, boolean Alive){
+		this.setGenêro(Genero);
+		this.setEspécie(Especie);
+		this.setDataNascimento(DataNascimento);
+		this.setAlive(Alive);
+		this.setNome(Nome);
+		this.setPlanetaNatal(PlanetaNatal);
+		this.setMidiChlorians(MidiChlorians);
+	}
+
+	public boolean getGenêro() {
+		return Genêro;
+	}
+
+	public void setGenêro(boolean genêro) {
+		Genêro = genêro;
+	}
+
+	public String getEspécie() {
+		return Espécie;
+	}
+
+	public void setEspécie(String espécie) {
+		Espécie = espécie;
+	}
+
+	public String getDataNascimento() {
+		return DataNascimento;
+	}
+
+	public void setDataNascimento(String dataNascimento) {
+		DataNascimento = dataNascimento;
+	}
+
+	public boolean getAlive() {
+		return Alive;
+	}
+
+	public void setAlive(boolean alive) {
+		Alive = alive;
+	}
+
+	public String getNome() {
+		return Nome;
+	}
+
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+
+	public String getPlanetaNatal() {
+		return PlanetaNatal;
+	}
+
+	public void setPlanetaNatal(String planetaNatal) {
+		PlanetaNatal = planetaNatal;
+	}
+
+	public int getMidiChlorians() {
+		return MidiChlorians;
+	}
+
+	public void setMidiChlorians(int midiChlorians) {
+		MidiChlorians = midiChlorians;
+	}
+	
+	
+
+}
