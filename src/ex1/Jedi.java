@@ -1,16 +1,19 @@
 package ex1;
 
 public abstract class Jedi extends SerVivo {
+
 	private double PazInterna;
 	private boolean Telepatia;
 	private boolean Telecinese;
-	private boolean Persuasão;
-	public Jedi(boolean Genêro, String Espécie, String DataNascimento, boolean Alive, String Nome, String PlanetaNatal, int MidChlorians, double PazInterna, boolean Telepatia, boolean Telecinese, boolean Persuasão) {
-		super(Genêro, Espécie, DataNascimento, Alive, Nome, PlanetaNatal, MidChlorians);
+	private boolean Persuasao;
+	public Jedi(String Nome, boolean Genero, String Especie, String DataNascimento, String PlanetaNatal,
+			int MidiChlorians, boolean Alive, double PazInterna, boolean Telepatia, boolean Telecinese, boolean Persuasao) {
+		super(Nome, Genero, Especie, DataNascimento, PlanetaNatal, MidiChlorians, Alive);
+	
 		this.PazInterna = PazInterna;
 		this.Telepatia = Telepatia;
 		this.Telecinese = Telecinese;
-		this.Persuasão = Persuasão;
+		this.Persuasao = Persuasao;
 	}
 	public double getPazInterna() {
 		return PazInterna;
@@ -31,10 +34,10 @@ public abstract class Jedi extends SerVivo {
 		Telecinese = telecinese;
 	}
 	public boolean isPersuasão() {
-		return Persuasão;
+		return Persuasao;
 	}
 	public void setPersuasão(boolean persuasão) {
-		Persuasão = persuasão;
+		Persuasao = persuasão;
 	}
 
 }

@@ -1,21 +1,24 @@
 package ex1;
 
 public class Padawan extends Jedi{
-	private boolean ConstroiSabre;
+
+	private boolean ConstroiSabreLuz;
 	private boolean TemTrança;
-	public Padawan(boolean Genêro, String Espécie, String DataNascimento, boolean Alive, String Nome,
-			String PlanetaNatal, int MidChlorians, double PazInterna, boolean Telepatia, boolean Telecinese,
-			boolean Persuasão, boolean ConstroiSabre, boolean TemTrança) {
-		super(Genêro, Espécie, DataNascimento, Alive, Nome, PlanetaNatal, MidChlorians, PazInterna, Telepatia, Telecinese,
-				Persuasão);
-		this.ConstroiSabre = ConstroiSabre;
-		this.TemTrança = TemTrança;
+
+	public Padawan(String Nome, boolean Genero, String Especie, String DataNascimento, String PlanetaNatal,
+			int MidiChlorians, boolean Alive, double PazInterna, boolean Telepatia, boolean Telecinese,
+			boolean Persuasao, boolean ConstroiSabredeLuz, boolean TemTrança) {
+		super(Nome, Genero, Especie, DataNascimento, PlanetaNatal, MidiChlorians, Alive, PazInterna, Telepatia, Telecinese,
+				Persuasao);
+		this.setConstroiSabre(ConstroiSabredeLuz);
+		this.setTemTrança(TemTrança);
 	}
+	
 	public boolean isConstroiSabre() {
-		return ConstroiSabre;
+		return ConstroiSabreLuz;
 	}
 	public void setConstroiSabre(boolean constroiSabre) {
-		ConstroiSabre = constroiSabre;
+		ConstroiSabreLuz = constroiSabre;
 	}
 	public boolean isTemTrança() {
 		return TemTrança;

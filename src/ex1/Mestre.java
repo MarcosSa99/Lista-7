@@ -1,20 +1,26 @@
 package ex1;
 
 public class Mestre extends Jedi{
-	private int CampoDeVidência;
+
+	private int CampoDeVidencia;
 	private boolean Imortalidade; 
 	
-	public Mestre(boolean Genêro, String Espécie, String DataNascimento, boolean Alive, String Nome,
-			String PlanetaNatal, int MidChlorians, double PazInterna, boolean Telepatia, boolean Telecinese,
-			boolean Persuasão) {
-		super(Genêro, Espécie, DataNascimento, Alive, Nome, PlanetaNatal, MidChlorians, PazInterna, Telepatia, Telecinese,
-				Persuasão);
+	public Mestre(String Nome, boolean Genero, String Especie, String DataNascimento, String PlanetaNatal,
+			int MidiChlorians, boolean Alive, double PazInterna, boolean Telepatia, boolean Telecinese,
+			boolean Persuasao, int CampodeVidencia, boolean Imortalidade) {
+		super(Nome, Genero, Especie, DataNascimento, PlanetaNatal, MidiChlorians, Alive, PazInterna, Telepatia, Telecinese,
+				Persuasao);
+		
+		this.setCampoDeVidência(CampodeVidencia);
+		this.setImortalidade(Imortalidade);
+		
 	}
+	
 	public int getCampoDeVidência() {
-		return CampoDeVidência;
+		return CampoDeVidencia;
 	}
 	public void setCampoDeVidência(int campoDeVidência) {
-		CampoDeVidência = campoDeVidência;
+		CampoDeVidencia = campoDeVidência;
 	}
 	public boolean isImortalidade() {
 		return Imortalidade;
