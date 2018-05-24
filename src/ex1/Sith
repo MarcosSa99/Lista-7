@@ -1,0 +1,59 @@
+package ex1;
+
+public abstract class Sith extends SerVivo{
+	
+	private double PercentualdeRaiva;
+	private String NovoNome;
+	private boolean Telepatia;
+	private boolean Telecinese;
+	private boolean Persuasão;
+	
+	public Sith (String Nome, boolean Genero, String Especie, String DataNascimento, String PlanetaNatal, int MidiChlorians, boolean Alive, String NovoNome, double PercentualdeRaiva, boolean Telepatia, boolean Telecinese, boolean Persuasão ){
+		super(Nome, Genero, Especie, DataNascimento, PlanetaNatal, MidiChlorians, Alive);
+		this.setPercentualdeRaiva(PercentualdeRaiva);
+		this.setNovoNome(NovoNome);
+		this.setTelepatia(Telepatia);
+		this.setTelecinese(Telecinese);
+		this.setPersuasão(Persuasão);
+	}
+
+	public double getPercentualdeRaiva() {
+		return PercentualdeRaiva;
+	}
+
+	public void setPercentualdeRaiva(double percentualdeRaiva) {
+		PercentualdeRaiva = percentualdeRaiva;
+	}
+
+	public String getNovoNome() {
+		return NovoNome;
+	}
+
+	public void setNovoNome(String novoNome) {
+		NovoNome = novoNome;
+	}
+
+	public boolean isTelepatia() {
+		return Telepatia;
+	}
+
+	public void setTelepatia(boolean telepatia) {
+		Telepatia = telepatia;
+	}
+
+	public boolean isPersuasão() {
+		return Persuasão;
+	}
+
+	public void setPersuasão(boolean persuasão) {
+		Persuasão = persuasão;
+	}
+
+	public boolean isTelecinese() {
+		return Telecinese;
+	}
+
+	public void setTelecinese(boolean telecinese) {
+		Telecinese = telecinese;
+	}
+}
